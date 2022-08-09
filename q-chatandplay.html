@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+      @font-face {
+          font-family: 'Burbank';src: url("https://joedmusic.rocks/DivineDragonCannon_EXTRA_ASSETS/BurbankBigCondensed-Bold.otf");}
+      body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;height:100vh;overflow-y:hidden;margin:0;}
+      a{text-decoration:none;color:inherit;}
+      p{background-color:white;padding:20px;font-size:48px;line-height: 1.25;height:100%;}
+      .vertical-container{display: flex;flex-direction:column;100%;height: 100%;justify-content: center;align-items: center;padding:0px 40px;}
+      h1{font-size:72px;padding:20px;background-color:white;}
+      button{font-size: 48px;padding: 20px;background-color: white;
+      font-weight: 600;color: inherit;transition: .2s ease all;cursor:pointer;font-family: 'Burbank';line-height:1.25;margin:20px;box-shadow:2px 2px 7px black;}
+      button:hover{
+      transform:scale(1.1);
+      transition: .2s ease all;
+      color: #8408B4;
+      text-decoration:underline;
+      }
+    button span{
+        font-size: 32px;
+        display:block;
+    }
+    .grid{display:grid;grid-template-columns: 60% 40%;width:100%;}
+    .col{height:100%; display:flex;flex-direction:column;justify-content: center;align-items:center;}
+    .arrow{font-size:72px;display:inline-block;margin-right:10px;transform:scaleY(1.5);}
+    .screenshot{width: 100%;}
+    .screenshot:hover{cursor:zoom-in;}
+    .modal{width:100%;height:100%;position:fixed;top:0;background-color: rgba(0,0,0,.8);z-index:999;display: none;}
+    .close{color:white;font-family:arial;font-size:48px;transform:scaleX(1.1);display:flex;justify-content: center;align-items:center; padding:20px;text-align: right;z-index:9999;position:absolute;right:20px;transition: .2s ease all;}
+    .close-caption{font-size:24px;text-transform:uppercase;margin-right:10px;}
+    .close:hover{cursor:pointer;transform:scale(1.2);transition: .2s ease all;}
+    </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="modal">
+<span class="close"><span class="close-caption">close image</span>X</span>
+<div class="vertical-container">
+<img class="enlarged" src="screen.png">
+</div>
+</div>
+<div class="vertical-container">
+<h1>Can I Chat and Play at the Same Time?
+</h1>
+<div class="grid">
+<div class="col">
+<p>Yes! Simply resize each window that opens so your computer screen looks just like this:
+</p>
+<img class="screenshot" src="screen.png">
+</div>
+<div class="col" style="justify-content:space-around;">
+<button style="font-size:72px;max-width:400px"><a href="https://theknightschool.com/splatterdays"><span>Now I understand everything.</span>Take Me To Splatterday!</a></button>
+<button style="font-size:62px;padding:20px;line-height: 1;"><a href="newcomers.html"><span class="arrow">←</span>BACK</a></button>
+</div>
+</div>    
+</div>
+<script>
+$('.screenshot').click(function(){
+ $('.modal').fadeIn();
+});
+$('.close').click(function(){
+ $('.modal').fadeOut();
+});
+$('.modal').click(function(){
+ $('.modal').fadeOut();
+});
+</script>
+</body>
+</html>

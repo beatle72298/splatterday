@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+      @font-face {
+          font-family: 'Burbank';src: url("https://joedmusic.rocks/DivineDragonCannon_EXTRA_ASSETS/BurbankBigCondensed-Bold.otf");}
+        body{font-family: 'Burbank'}
+      div{display: flex;flex-direction:column;100%;height: 100%;justify-content: center;align-items: center;}
+        h1{font-size:48px;padding:20px;background-color:#8408B4;color:white;}
+      button{font-size: 32px;padding: 20px;background-color: #8408B4;
+      font-weight: 600;color: white;text-transform: capitalize;transition: .2s ease all;max-width: 300px;cursor:pointer;font-family: 'Burbank';line-height:1.25;}
+      button:hover{
+      transform:scale(1.1);
+      transition: .2s ease all;
+      }
+    </style>
+    
+</head>
+<body>
+
+<div>
+<h1>Welcome to Splatterday!</h1>
+<button onclick="openSite2();">Click Here To Join Chat!</button><br>
+<button onclick="openSite1();">Click Here To Play Chess!</button><br>
+<button onclick="popupCenter({url: 'https://theknightschool.com/splatterdays-faq', title: 'Tourney FAQs', w: 800, h: 500});">FAQs!</button>
+</div>    
+<script>
+    function openSite1(){
+    //var top = (screen.height - height) / 2;
+    window.open( "https://lichess.org/tournament/RBWwFmiQ","_blank","resizable=yes,toolbar=no, width=1025, height=600, top=235, left=690");
+    };
+    function openSite2(){
+    window.open("https://us20.chatzy.com/16790411677792","_blank","resizable=yes,toolbar=no,width=550, height=600, top=235, left=175");
+    };
+    const popupCenter = ({url, title, w, h}) => {
+    // Fixes dual-screen position                             Most browsers      Firefox
+    const dualScreenLeft = window.screenLeft !==  undefined ? window.screenLeft : window.screenX;
+    const dualScreenTop = window.screenTop !==  undefined   ? window.screenTop  : window.screenY;
+
+    const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    const systemZoom = width / window.screen.availWidth;
+    const left = (width - w) / 2 / systemZoom + dualScreenLeft
+    const top = (height - h) / 2 / systemZoom + dualScreenTop
+    const newWindow = window.open(url, title, 
+      `
+      scrollbars=yes,
+      width=${w / systemZoom}, 
+      height=${h / systemZoom}, 
+      top=${top}, 
+      left=${left}
+      `
+    )
+
+    if (window.focus) newWindow.focus();
+}
+</script>
+    
+</body>
+</html>
