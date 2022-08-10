@@ -1,10 +1,10 @@
 @font-face {font-family: 'Burbank';src: url("BurbankBigCondensed-Bold.otf");}
 
-body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;height:100vh;overflow-y:hidden;}
+body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;overflow-y:hidden;}
 
-a{text-decoration:none;color:inherit;}
+a{text-decoration:none;color:inherit;height:100%;width:100%;padding:20px;}
 
-p{background-color:white;padding:20px;font-size:48px;line-height: 1.25;}
+p{background-color:white;font-size:48px;line-height: 1.25;}
 
 p a{color:dodgerblue;text-decoration: underline;}
 
@@ -12,7 +12,7 @@ p a{color:dodgerblue;text-decoration: underline;}
 
 h1{font-size:72px;padding:20px;background-color:white;}
 
-button{font-size: 48px;padding: 20px;background-color: white;
+button{font-size: 48px;background-color: white;
 font-weight: 600;color: inherit;transition: .2s ease all;cursor:pointer;font-family: 'Burbank';line-height:1.25;margin:20px;box-shadow:2px 2px 7px black;}
 
 button:hover{
@@ -24,7 +24,7 @@ text-decoration:underline;
 
 button span{
 font-size: 32px;
-display:block;
+display:inline-block;
 }
 
 .bottom-buttons{width: 80%;display:inline-flex;flex-direction:row;justify-content:space-between;}
