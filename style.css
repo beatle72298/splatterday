@@ -1,6 +1,6 @@
 @font-face {font-family: 'Burbank';src: url("BurbankBigCondensed-Bold.otf");}
 
-body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;overflow-y:hidden;}
+body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;}
 
 a{text-decoration:none;color:inherit;height:100%;width:100%;}
 
@@ -12,7 +12,7 @@ p a{color:dodgerblue;text-decoration: underline;}
 h1{font-size:72px;padding:20px;background-color:white;}
 
 button{font-size: 48px;background-color: white;
-font-weight: 600;color: inherit;transition: .2s ease all;cursor:pointer;font-family: 'Burbank';line-height:1.25;margin:20px;box-shadow:2px 2px 7px black;padding:20px;}
+font-weight: 600;color: inherit;transition: .2s ease all;cursor:pointer;font-family: 'Burbank';line-height:1.25;margin-bottom:10px;box-shadow:2px 2px 7px black;padding:20px;}
 
 button:hover{
 transform:scale(1.1);
@@ -32,9 +32,11 @@ display:block;
 
 .col{height:100%; display:flex;flex-direction:column;justify-content: center;align-items:center;}
 
+.questions button{width:75%;}
+
 .arrow{font-size:72px;display:inline-block;margin-right:10px;transform:scaleY(1.5);}
 
-.screenshot{width: 100%;}
+.screenshot{width: 75%;}
 
 .screenshot:hover{cursor:zoom-in;}
 
