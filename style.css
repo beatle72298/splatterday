@@ -8,7 +8,7 @@ p{background-color:white;font-size:48px;line-height: 1.25;padding:20px 40px;}
 
 p a{color:dodgerblue;text-decoration: underline;}
 
-.vertical-container{display: inline-flex;flex-direction:column;height: 100%;width:100%;justify-content: center;align-items: center;padding:0px 40px;max-width:1920px;}
+.vertical-container{display: inline-flex;flex-direction:column;height: 100%;width:100%;justify-content: center;align-items: center;max-width:1920px;}
 h1{font-size:72px;padding:20px 80px;background-color:white;}
 
 button{font-size: 48px;background-color: white;
