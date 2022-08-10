@@ -1,14 +1,14 @@
 @font-face {font-family: 'Burbank';src: url("BurbankBigCondensed-Bold.otf");}
 
-body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;}
+body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;box-sizing:border-box;}
 
-a{text-decoration:none;color:inherit;height:100%;width:100%;}
+a{text-decoration:none;color:inherit;width:100%}
 
-p{background-color:white;font-size:48px;line-height: 1.25;padding:20px;}
+p{background-color:white;font-size:48px;line-height: 1.25;padding:20px 40px;}
 
 p a{color:dodgerblue;text-decoration: underline;}
 
-.vertical-container{display: flex;flex-direction:column;100%;height: 100%;justify-content: center;align-items: center;padding:0px 40px;max-width:1920px;}
+.vertical-container{display: inline-flex;flex-direction:column;width:100%;height: 100%;justify-content: center;align-items: center;padding:0px 40px;max-width:1920px;}
 h1{font-size:72px;padding:20px 80px;background-color:white;}
 
 button{font-size: 48px;background-color: white;
