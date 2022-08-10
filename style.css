@@ -2,9 +2,9 @@
 
 body{font-family: 'Burbank'; background-color:#8408B4;text-align: center;overflow-y:hidden;}
 
-a{text-decoration:none;color:inherit;height:100%;width:100%;padding:20px;}
+a{text-decoration:none;color:inherit;height:100%;width:100%;}
 
-p{background-color:white;font-size:48px;line-height: 1.25;}
+p{background-color:white;font-size:48px;line-height: 1.25;padding:20px;}
 
 p a{color:dodgerblue;text-decoration: underline;}
 
@@ -12,7 +12,7 @@ p a{color:dodgerblue;text-decoration: underline;}
 h1{font-size:72px;padding:20px;background-color:white;}
 
 button{font-size: 48px;background-color: white;
-font-weight: 600;color: inherit;transition: .2s ease all;cursor:pointer;font-family: 'Burbank';line-height:1.25;margin:20px;box-shadow:2px 2px 7px black;}
+font-weight: 600;color: inherit;transition: .2s ease all;cursor:pointer;font-family: 'Burbank';line-height:1.25;margin:20px;box-shadow:2px 2px 7px black;padding:20px;}
 
 button:hover{
 transform:scale(1.1);
@@ -23,7 +23,7 @@ text-decoration:underline;
 
 button span{
 font-size: 32px;
-display:inline-block;
+display:block;
 }
 
 .bottom-buttons{width: 80%;display:inline-flex;flex-direction:row;justify-content:space-between;}
