@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    <link href="style.css" type="text/css" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{max-width:250px;}
+    </style>
+</head>
+<body style="height: 100vh;">
+
+<div class="vertical-container">
+<!--<h1>Welcome to Splatterday!</h1>-->
+<div>
+<button onclick="openSite2();">Click Here To Join Chat!</button><br><br>
+<button onclick="openSite1();">Click Here To Play Chess!</button>
+</div>
+<!--<button onclick="popupCenter({url: 'https://theknightschool.com/splatterdays-faq', title: 'Tourney FAQs', w: 800, h: 500});">FAQs!</button>-->
+</div>    
+<script>
+    function openSite1(){
+    //var top = (screen.height - height) / 2;
+    window.open( "https://lichess.org/tournament/RBWwFmiQ","_blank","resizable=yes,toolbar=no, width=1025, height=550, top=235, left=690");
+    };
+    function openSite2(){
+    window.open("https://us20.chatzy.com/16790411677792","_blank","resizable=yes,toolbar=no,width=550, height=550, top=235, left=175");
+    };
+    const popup = ({url, title, w, h}) => {
+    // Fixes dual-screen position                             Most browsers      Firefox
+    var innerWidth = window.innerWidth;
+    var outerWidth = window.outerWidth;
+    
+    var innerHeight = window.innerHeight;
+    var outerHeight = window.outerHeight;
+    
+    const newWindow = window.open(url, title, 
+      `
+      scrollbars=yes,
+      width=${w / systemZoom}, 
+      height=${h / systemZoom}, 
+      top=${top}, 
+      left=${left}
+      `
+    )
+
+    if (window.focus) newWindow.focus();
+}
+</script>
+    
+</body>
+</html>
