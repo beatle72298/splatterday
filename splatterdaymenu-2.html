@@ -13,33 +13,31 @@
 <div class="vertical-container">
 <!--<h1>Welcome to Splatterday!</h1>-->
 <div>
-<button onclick="openSite2();">Click Here To Join Chat!</button><br><br>
-<button onclick="openSite1();">Click Here To Play Chess!</button>
+<button onclick="popup({url:'https://us20.chatzy.com/16790411677792',title: 'Chat',w:550,h:550,left:175})">Click Here To Join Chat!</button><br><br>
+<button onclick="popup({url:'https://lichess.org/tournament/RBWwFmiQ',title: 'Chess',w:1025,h:550,left:690})">Click Here To Play Chess!</button>
 </div>
 <!--<button onclick="popupCenter({url: 'https://theknightschool.com/splatterdays-faq', title: 'Tourney FAQs', w: 800, h: 500});">FAQs!</button>-->
 </div>    
 <script>
-    function openSite1(){
-    //var top = (screen.height - height) / 2;
-    window.open( "https://lichess.org/tournament/RBWwFmiQ","_blank","resizable=yes,toolbar=no, width=1025, height=550, top=235, left=690");
-    };
-    function openSite2(){
-    window.open("https://us20.chatzy.com/16790411677792","_blank","resizable=yes,toolbar=no,width=550, height=550, top=235, left=175");
-    };
-    const popup = ({url, title, w, h}) => {
+    const popup = ({url, title, w, h, left}) => {
     // Fixes dual-screen position                             Most browsers      Firefox
     var innerWidth = window.innerWidth;
+    var innerHeight = window.innerHeight;
+    
+    var outerHeight = window.outerHeight;
     var outerWidth = window.outerWidth;
     
-    var innerHeight = window.innerHeight;
-    var outerHeight = window.outerHeight;
-    
+    var math = outerHeight - innerHeight;
+    console.log('outerHeight - innerHeight = '+math);
+    const top= math + 150;
     const newWindow = window.open(url, title, 
       `
       scrollbars=yes,
-      width=${w / systemZoom}, 
-      height=${h / systemZoom}, 
-      top=${top}, 
+      resizeable=yes,
+      toolbar=no,
+      width=${w}, 
+      height=${h}, 
+      top=${top},
       left=${left}
       `
     )
