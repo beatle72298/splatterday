@@ -37,7 +37,7 @@ display:block;
 
 .col{height:100%; display:flex;flex-direction:column;justify-content: center;align-items:center;}
 
-.questions button{width:75%;font-size: 40px;}
+.questions button{width:75%;font-size: 30px;}
 
 .arrow{font-size:72px;display:inline-block;margin-right:10px;transform:scaleY(1.5);}
 
@@ -54,6 +54,8 @@ display:block;
 .close:hover{cursor:pointer;transform:scale(1.2);transition: .2s ease all;}
 .menu-caption{font-size: 28px;padding:20px;max-width:250px;}
 
+.schedule{font-size:28px;}
+.schedule span{color:#8408B4;display:block;}
 /* Handle 125% and 150% Windows 10 Font Scaling on 96dpi monitors */
 @media (min-resolution: 120dpi){
     h1 {font-size: calc(72px * .6666);}
@@ -62,7 +64,8 @@ display:block;
     button span{font-size: calc(48px * .6666);}
     .splatterday-button{font-size: calc(72px * .6666);}
     .back-button{font-size: calc(62px * .6666);}
-    .questions{font-size: calc(40px * .6666);}
+    .questions{font-size: calc(30px * .6666);}
+    .schedule{font-size: calc(28px * .6666);}
 }
 @media (min-resolution: 144dpi){
     h1 {font-size: calc(72px * .5);}
@@ -71,5 +74,6 @@ display:block;
     button span{font-size: calc(48px * .5);}
     .splatterday-button{font-size: calc(72px * .5);}
     .back-button{font-size: calc(62px * .5;);}
-    .questions{font-size: calc(40px * .5);}
+    .questions{font-size: calc(30px * .5);}
+    .schedule{font-size: calc(28px * .5);}
 }
