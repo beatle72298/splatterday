@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    <link href="style.css" type="text/css" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{max-width:250px;}
+    </style>
+</head>
+<body style="height: 100vh;">
+
+<div class="vertical-container">
+
+<div>
+<button id="chat-btn" onclick="popup({url:'https://us20.chatzy.com/16790411677792',title: 'Chat',w:550,h:560,left:175})">Click Here To Join Chat!</button><br><br>
+<button id="chess-btn" onclick="">Click Here To Play Chess!</button>
+</div><br><br>
+<p class="menu-caption">Once You Open "Join Chat" and "Play Chess," Close This Purple Page!</p>
+</div>    
+<script>
+    const popup = ({url, title, w, h, left}) => {
+    var innerWidth = window.innerWidth;
+    var innerHeight = window.innerHeight;
+    
+    var outerHeight = window.outerHeight;
+    var outerWidth = window.outerWidth;
+    
+    var math = outerHeight - innerHeight;
+    console.log('outerHeight - innerHeight = '+math);
+    const top= math + 165;
+    const newWindow = window.open(url, title, 
+      `
+      scrollbars=yes,
+      resizeable=yes,
+      toolbar=no,
+      width=${w}, 
+      height=${h}, 
+      top=${top},
+      left=${left}
+      `
+    )
+
+    if (window.focus) newWindow.focus();
+}
+</script>
+    
+</body>
+</html>
