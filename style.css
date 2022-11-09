@@ -163,11 +163,16 @@ iframe{max-width:975px;width:100%;height:500px;}
     }
     .enlarged{width:100%;}
     .schedule{font-size:18px;}
+    iframe{width:90%;height:250px;}
+    .bottom-buttons a:first-child{
+        margin-right:20px;
+    }
     
 }
 @media screen and (orientation:landscape) {
     .enlarged{height:100%;}
     .close{text-shadow:1px 1px 4px black;}
+    iframe{width:80%}
     .rotate-prompt{
         opacity:0%;
     }
