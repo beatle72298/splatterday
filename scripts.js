@@ -13,10 +13,10 @@ $(document).ready(function(){
 
 function changeBtn(x) {
   if (x.matches) { // If media query matches
-    $('#splatterday-btn').href = "https://theknightschool.com/splatterday";
+    $('#splatterday-btn').attr("href","https://theknightschool.com/splatterday");
     $("#splatterday-btn").attr("onClick","");
   } else {
-      $('#splatterday-btn').href = "";
+      $('#splatterday-btn').attr("href","");
       $("#splatterday-btn").attr("onClick","javascript:window.close('','_parent','');");
   }
 }
