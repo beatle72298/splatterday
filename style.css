@@ -164,8 +164,9 @@ iframe{max-width:975px;width:100%;height:500px;}
     .enlarged{width:100%;}
     .schedule{font-size:18px;}
     iframe{width:90%;height:250px;}
+    .bottom-buttons{display:block;text-align: center;}
     .bottom-buttons a:first-child{
-        margin-right:20px;
+/*        margin-right:20px;*/
     }
     
 }
