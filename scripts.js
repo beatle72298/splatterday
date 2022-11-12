@@ -14,7 +14,7 @@ $(document).ready(function(){
 function changeBtn(x) {
   if (x.matches) { // If media query matches
     $('#splatterday-btn').attr("href","https://theknightschool.com/splatterday");
-    $('#splatterday-btn').attr("target","_parent");
+    $('#splatterday-btn').attr("target","_blank");
     $("#splatterday-btn").attr("onClick","");
   } else {
       $('#splatterday-btn').attr("href","");
