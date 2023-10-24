@@ -24,9 +24,9 @@ console.log(link);
 
 let onClickChess = "popup({url:'"+link+"',title: 'Chess',w:1500,h:560,left:200})"
 
-let onClickTour = "popup({url:'https://splatterday.theknightschool.com/tour', title:'Tour',w:600,h:900})"
+let onClickTour = "popup({url:'https://splatterday.theknightschool.com/tour', title:'Tour',w:900,h:900,left:500})"
 
-let onClickHelp = "popup({url:'https://splatterday.theknightschool.com/help', title:'Help',w:600,h:900})"
+let onClickHelp = "popup({url:'https://splatterday.theknightschool.com/help', title:'Help',w:900,h:900,left:500})"
 
 $("#comp-l6wlp62i > div[data-testid='inline-content']").attr("onclick",onClickChess);
 
