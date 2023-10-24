@@ -21,9 +21,8 @@
 </style>
 
 <div>
-<a id="play-btn"><button>Click to Start!</button></a><br>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<button onclick="popupCenter({url: 'https://theknightschool.com/splatterday-menu', title: 'Tourney Menu', w: 400, h: 800});">Click to Start!</button><br>
+</div>    
 <script>
 const popupCenter = ({url, title, w, h}) => {
     // Fixes dual-screen position                             Most browsers      Firefox
@@ -51,26 +50,4 @@ const popupCenter = ({url, title, w, h}) => {
 
     if (window.focus) newWindow.focus();
 }
-
-$(document).ready(function(){    
-
-
-function changeBtn(x) {
-  if (x.matches) { // If media query matches
-    $('#play-btn').attr("href","https://theknightschool.com/splatterday-menu");
-    $('#play-btn').attr("target","_top");
-    $("#play-btn").attr("onClick","");
-  } else {
-      $('#play-btn').attr("href","");
-      $('#play-btn').attr("target","");
-      $("#play-btn").attr("onClick","popupCenter({url: 'https://theknightschool.com/splatterday-menu', title: 'Tourney Menu', w: 400, h: 800});");
-  }
-}
-
-var x = window.matchMedia("(max-width: 500px)")
-changeBtn(x) // Call listener function at run time
-x.addListener(changeBtn) // Attach listener function on state changes
-
-});
-
 </script>
