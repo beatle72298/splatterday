@@ -1,0 +1,64 @@
+<style>
+.nTiihL{display:none;}
+body{overflow-x:hidden;overflow-y: hidden;}
+#comp-l6wlk2qw > div[data-testid="inline-content"], #comp-l6wlp62i > div[data-testid="inline-content"], #comp-la5leir5 > div[data-testid='inline-content']{font-size: 48px;background-color: white;
+font-weight: 600;color: inherit;transition: .2s ease all;cursor:pointer;font-family: 'Burbank';line-height:1.25;margin-bottom:10px;box-shadow:2px 2px 7px black;border:2px black solid;}
+
+#comp-l6wlk2qw > div:hover, #comp-l6wlp62i > div:hover, #comp-la5leir5 > div:hover{
+transform:scale(1.1);
+transition: .2s ease all;
+color: #8408B4 !important;
+text-decoration:underline;
+}
+#comp-l6wlk2qw > div:hover > div > div > p > span > span, #comp-l6wlp62i > div:hover > div > div > p > span, #comp-la5leir5 > div:hover > div > div > p > span > span{color: #8408B4!important;}
+._13Lxq{display:none;}
+[data-mesh-id=comp-l6wjuwd4inlineContent-gridContainer]{background-color:white;}
+</style>
+    
+    
+<script>
+    
+$(document).ready(function(){    
+let link = $("#comp-l6w88giv > p > span > a").attr("href");
+console.log(link);
+
+let onClickChess = "popup({url:'"+link+"',title: 'Chess',w:1500,h:560,left:200})"
+
+let onClickTour = "popup({url:'https://splatterday.theknightschool.com/tour', title:'Tour',w:600,h:900})"
+
+let onClickHelp = "popup({url:'https://splatterday.theknightschool.com/help', title:'Help',w:600,h:900})"
+
+$("#comp-l6wlp62i > div[data-testid='inline-content']").attr("onclick",onClickChess);
+
+$("#comp-l6wlk2qw > div[data-testid='inline-content']").attr("onclick",onClickTour);
+
+$("#comp-la5leir5 > div[data-testid='inline-content']").attr("onclick",onClickHelp);
+
+});
+    
+const popup = ({url, title, w, h, left}) => {
+var innerWidth = window.innerWidth;
+var innerHeight = window.innerHeight;
+
+var outerHeight = window.outerHeight;
+var outerWidth = window.outerWidth;
+
+var math = outerHeight - innerHeight;
+console.log('outerHeight - innerHeight = '+math);
+const top= math + 180;
+const newWindow = window.open(url, title, 
+  `
+  scrollbars=yes,
+  resizeable=yes,
+  toolbar=no,
+  width=${w}, 
+  height=${h}, 
+  top=${top},
+  left=${left}
+  `
+)
+
+if (window.focus) newWindow.focus();
+}
+
+</script>
